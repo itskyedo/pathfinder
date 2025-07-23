@@ -1,0 +1,151 @@
+.root {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: row;
+
+  background: #000;
+}
+
+.content {
+  width: calc(100% - 300px);
+  height: 100%;
+}
+
+.leftSidebar {
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 300px;
+  height: 100%;
+  border-right: 1px solid #212121;
+  padding: 20px;
+}
+
+.leftSidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.leftSidebar nav .navHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftSidebar .createDiagramButton {
+  cursor: pointer;
+}
+
+.leftSidebar nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.leftSidebar nav .label {
+  font-size: var(--text-xxs);
+  color: var(--color-gray-100);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.leftSidebar nav .navItem {
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5em;
+
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-gray-400);
+  padding: 8px 10px;
+  border-radius: var(--radii-md);
+
+  cursor: pointer;
+  user-select: none;
+
+  transition:
+    background 100ms ease-in-out,
+    color 100ms ease-in-out;
+}
+
+.leftSidebar nav .navItem:hover {
+  background: var(--color-gray-900);
+  color: var(--color-gray-100);
+}
+
+.leftSidebar nav .navItem.mono {
+  font-family: var(--font-mono);
+}
+
+.leftSidebar nav.specialNav .navItem {
+  font-size: var(--text-md);
+  color: var(--color-gray-50);
+}
+
+.leftSidebar nav .navItem.active {
+  background: var(--color-blue-400);
+  color: var(--color-gray-50);
+}
+
+.leftSidebar nav .navItem.active .icon {
+  color: var(--color-gray-50);
+}
+
+.leftSidebar .icon {
+  color: var(--color-gray-400);
+}
+
+.leftSidebar .logo {
+  font-size: var(--text-lg);
+}
+
+.leftSidebar .searchBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+
+  background: #161618;
+  color: #ababb7;
+
+  padding: 12px 10px;
+  border: 1px solid #363636;
+  border-radius: var(--radii-md);
+}
+
+.leftSidebar .searchBox input {
+  width: 100%;
+
+  background: inherit;
+  border: 0;
+  outline: 0;
+  color: inherit;
+  font-size: var(--text-md);
+  font-weight: 500;
+}
+
+.rightSidebar {
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 300px;
+  height: 100%;
+  border-left: 1px solid #212121;
+  padding: 20px;
+}

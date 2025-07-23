@@ -1,0 +1,89 @@
+:root {
+  --font-sans: 'Geist Variable', sans-serif;
+  --font-mono: 'Geist Mono Variable', mono;
+
+  --text-base: 16px;
+  --display-xl: 2.027rem;
+  --display-lg: 1.802rem;
+  --display-md: 1.602rem;
+  --display-sm: 1.424rem;
+  --text-xl: 1.266rem;
+  --text-lg: 1.125rem;
+  --text-md: 1rem;
+  --text-sm: 0.889rem;
+  --text-xs: 0.79rem;
+  --text-xxs: 0.68rem;
+
+  --color-gray-50: #f3f3f4;
+  --color-gray-100: #dadadf;
+  --color-gray-200: #c1c1c9;
+  --color-gray-300: #a8a8b4;
+  --color-gray-400: #8f8f9e;
+  --color-gray-500: #767689;
+  --color-gray-600: #616170;
+  --color-gray-700: #4b4b57;
+  --color-gray-800: #36363e;
+  --color-gray-900: #202025;
+  --color-gray-950: #0b0b0c;
+
+  --color-blue-400: #2828b1;
+
+  --radii-sm: 3px;
+  --radii-md: 5px;
+  --radii-lg: 10px;
+  --radii-xl: 20px;
+  --radii-round: 99999px;
+}
+
+:root {
+  overscroll-behavior: none;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--font-sans);
+  font-optical-sizing: auto;
+  font-size: var(--text-base);
+  margin: 0;
+  padding: 0;
+
+  background: #000;
+  color: #fff;
+}
+
+a {
+  color: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.disabled {
+  cursor: not-allowed !important;
+}

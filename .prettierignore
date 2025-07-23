@@ -1,0 +1,19 @@
+# version control
+**/.git
+**/.svn
+**/.hg
+**/.turbo
+**/node_modules
+
+# artifacts
+build
+coverage
+dist
+migrations
+
+# misc
+CHANGELOG.md
+
+# html
+*.html
+

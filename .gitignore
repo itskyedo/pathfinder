@@ -1,0 +1,44 @@
+# Dependencies
+node_modules
+
+# Package Managers
+.npm
+.yarn
+.yarn-integrity
+.pnp.*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build
+out
+dist
+build
+*.tgz
+*.zip
+.solid
+.output
+.vercel
+.netlify
+netlify
+.vinxi
+
+# Caches
+.cache/
+.cache
+.parcel-cache
+.eslintcache
+*.tsbuildinfo
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
