@@ -1,5 +1,4 @@
 import { App } from '@canvex/core';
-import DragPanZoomExtension from '@canvex/extension-drag-pan-zoom';
 import FishboneDiagramExtension, {
   type CategoryNodeBuilder,
   type CauseNodeBuilder,
@@ -21,6 +20,7 @@ import {
 } from 'solid-js';
 import { v4 as uuidv4 } from 'uuid';
 
+import { CustomDragPanZoomExtension } from '~/extensions/drag-pan-zoom/extension';
 import ResizeObserverExtension from '~/extensions/resize-observer';
 import { addNode } from '~/queries/add-node';
 import { deleteNode } from '~/queries/delete-node';
@@ -91,7 +91,7 @@ export default function Canvas(props: CanvasProps) {
 
         new MouseExtension({}),
 
-        new DragPanZoomExtension({
+        new CustomDragPanZoomExtension({
           minZoom: 0.1,
           maxZoom: 3,
         }),
@@ -161,6 +161,8 @@ export default function Canvas(props: CanvasProps) {
       }
 
       if (newNode) {
+        app.storage.dragPanZoom.anchor = null;
+
         focusedNode = newNode;
         updateLayout();
         centerToViewport(app, newNode);
