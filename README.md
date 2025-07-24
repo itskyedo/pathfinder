@@ -25,6 +25,8 @@ An interactive diagram tool for creating and editing fishbone diagrams.
 - Double click a node to edit
 - Left click a node and press the `Delete` or `Backspace` key to delete
 - Click the `plus` button next to a focused node to add
+- Left click the canvas or use the middle mouse button (AKA the mouse wheel button) to pan around the canvas.
+- Use your touchpad (with two fingers) or your mouse wheel to scroll.
 
 # Notes
 
